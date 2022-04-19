@@ -52,6 +52,14 @@ npm install eslint --save-dev
 npm init @eslint/config
 ```
 
+- Add prettier config to ESLint like
+
+```
+$ npm install --save-dev eslint-config-prettier
+```
+
+and add `prettier` as entry into `eslintrc.js`
+
 - CLI usage: you can call the lint explicitly from command line. Add `--ext` for any suffix you want to lint, and then path to folder / file to test.
 
 ```
@@ -81,11 +89,13 @@ npx stylelint "**/*.css"
 ```
 
 ## Visual Studio settings
+
 - official plugins recommended to use:
-   - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)   
-   - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+  - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 - settings must be completed then. I recommend settings for whole workspace (Action > Open Workspace Settings (JSON)) and here is a plain good example:
+
 ```
 {
 	"folders": [
