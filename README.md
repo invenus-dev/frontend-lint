@@ -34,8 +34,11 @@ In the root level, we only have:
 ## Install steps on custom projects
 
 ### Prettier
-- We use prettier only as a IDE part now, you can install an official plugin into your IDE
-- a `.prettierrc` file needs to be present and set as default IDE formatter
+- Install via
+```
+npm install --save-dev --save-exact prettier
+```
+- create a `.prettierrc` file in the project folder with any settings
 
 ### ESLint
 - Best is to follow config steps as presented by script. This should add all required libs and add `.eslintrc.js` file (or simmilar, this is chosen by you in questions). Make sure you tick environments properly - most often `browser` and `node` will be your case.
