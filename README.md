@@ -90,11 +90,11 @@ $ npx stylelint "**/*.css"
 
 ## Visual Studio settings
 
-- official plugins recommended to use:
+- Official plugins recommended to use:
   - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
-- settings must be completed then. I recommend settings for whole workspace (Action > Open Workspace Settings (JSON)) and here is a plain good example:
+- After installing, you need to adjust settings of the plugins. See below for example. This is workspace settings, Action > Open Workspace Settings (JSON).
 
 ```json
 {
