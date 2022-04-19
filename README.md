@@ -44,7 +44,7 @@ npm install eslint --save-dev
 npm init @eslint/config
 ```
 
-You can call the lint explicitly from command line. Add `--ext` for any suffix you want to lint, and then path to folder / file to test.
+- CLI usage: you can call the lint explicitly from command line. Add `--ext` for any suffix you want to lint, and then path to folder / file to test.
 ```
 npx eslint --ext .js src/
 ```
@@ -62,4 +62,7 @@ npm install --save-dev stylelint stylelint-config-standard stylelint-config-pret
   "extends": ["stylelint-config-standard", "stylelint-config-prettier"]
 }
 ```
-
+- CLI usage: call linting any time with
+```
+npx stylelint "**/*.css"
+```
