@@ -28,7 +28,6 @@ All projects reside individually in a folder of this repository.
 
 In the root level, we only have:
 - a `.nvmrc` file which fixes Node to version 16,
-- a `.prettierrc` file with prettier defaults,
 - this Readme file.
 
 ## Install steps on custom projects
