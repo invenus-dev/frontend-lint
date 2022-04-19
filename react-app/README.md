@@ -1,6 +1,6 @@
 ## Linting React app
 
-Some remarks, where this deviates from global README:
+### Deviations from global Readme
 
 - When running ESLint configuration wizard, indicate React is needed. `eslint-plugin-react` should be automatically added to devDependecies.
 - Also, rather tick the `node` environment, without it `.eslintrc.js` will indicate warnings.

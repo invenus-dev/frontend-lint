@@ -37,8 +37,8 @@ In the root level, we only have:
 
 - Install via
 
-```
-npm install --save-dev --save-exact prettier
+```console
+$ npm install --save-dev --save-exact prettier
 ```
 
 - create a `.prettierrc` file in the project folder with any settings
@@ -47,14 +47,14 @@ npm install --save-dev --save-exact prettier
 
 - Best is to follow config steps as presented by script. This should add all required libs and add `.eslintrc.js` file (or simmilar, this is chosen by you in questions). Make sure you tick environments properly - most often `browser` and `node` will be your case.
 
-```
-npm install eslint --save-dev
-npm init @eslint/config
+```console
+$ npm install eslint --save-dev
+$ npm init @eslint/config
 ```
 
 - Add prettier config to ESLint like
 
-```
+```console
 $ npm install --save-dev eslint-config-prettier
 ```
 
@@ -62,21 +62,21 @@ and add `prettier` as entry into `eslintrc.js`
 
 - CLI usage: you can call the lint explicitly from command line. Add `--ext` for any suffix you want to lint, and then path to folder / file to test.
 
-```
-npx eslint --ext .js src/
+```console
+$ npx eslint src/ --ext .js,.jsx
 ```
 
 ### Stylelint
 
 - install via
 
-```
-npm install --save-dev stylelint stylelint-config-standard stylelint-config-prettier
+```console
+$ npm install --save-dev stylelint stylelint-config-standard stylelint-config-prettier
 ```
 
 - [follow this guide](https://stylelint.io/user-guide/get-started) to craft a new `stylelintrc.json` file - with the prettier one we use
 
-```
+```json
 {
   "extends": ["stylelint-config-standard", "stylelint-config-prettier"]
 }
@@ -84,8 +84,8 @@ npm install --save-dev stylelint stylelint-config-standard stylelint-config-pret
 
 - CLI usage: call linting any time with
 
-```
-npx stylelint "**/*.css"
+```console
+$ npx stylelint "**/*.css"
 ```
 
 ## Visual Studio settings
@@ -96,28 +96,24 @@ npx stylelint "**/*.css"
   - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 - settings must be completed then. I recommend settings for whole workspace (Action > Open Workspace Settings (JSON)) and here is a plain good example:
 
-```
+```json
 {
-	"folders": [
-		{
-			"path": "folder-in-project"
-		}
-	],
-	"settings": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"editor.codeActionsOnSave": {
-			"source.fixAll.eslint": true,
-			"source.fixAll.stylelint": true,
-		},
-		"[css]": {
-			"editor.defaultFormatter": "stylelint.vscode-stylelint",
-		},
-		"stylelint.validate": [
-			"css",
-		],
-		"eslint.validate": [
-			"javascript"
-		]
-	}
+  "folders": [
+    {
+      "path": "folder-in-project"
+    }
+  ],
+  "settings": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    },
+    "[css]": {
+      "editor.defaultFormatter": "stylelint.vscode-stylelint"
+    },
+    "stylelint.validate": ["css"],
+    "eslint.validate": ["javascript"]
+  }
 }
 ```
