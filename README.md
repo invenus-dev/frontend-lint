@@ -26,4 +26,17 @@ All of them with and without TypeScript enabled.
 
 All projects reside individually in a folder of this repository.
 
-In the root level, we only have a `.nvmrc` file which fixes Node to version 16, and this Readme file.
+In the root level, we only have:
+- a `.nvmrc` file which fixes Node to version 16,
+- a `.prettierrc` file with prettier defaults,
+- this Readme file.
+
+## Install steps on custom projects
+
+### Prettier
+- We use prettier only as a IDE part now, you can install an official plugin into your IDE
+- a `.prettierrc` file needs to be present and set as default IDE formatter
+
+### ESLint
+
+**Non-typescript** - install as 
