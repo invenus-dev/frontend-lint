@@ -38,5 +38,8 @@ In the root level, we only have:
 - a `.prettierrc` file needs to be present and set as default IDE formatter
 
 ### ESLint
-
-**Non-typescript** - install as 
+- Best is to follow config steps as presented by script. This should add all required libs and add `.eslintrc.js` file (or simmilar, this is chosen by you in questions). Make sure you tick environments properly - most often `browser` and `node` will be your case.
+```
+npm install eslint --save-dev
+npm init @eslint/config
+```
