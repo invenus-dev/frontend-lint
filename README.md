@@ -48,3 +48,18 @@ You can call the lint explicitly from command line. Add `--ext` for any suffix y
 ```
 npx eslint --ext .js src/
 ```
+
+### Stylelint
+
+- install via 
+```
+npm install --save-dev stylelint stylelint-config-standard stylelint-config-prettier
+```
+- [follow this guide](https://stylelint.io/user-guide/get-started) to craft a new `stylelintrc.json` file - with the prettier one we use
+
+```
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"]
+}
+```
+
