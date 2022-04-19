@@ -43,3 +43,8 @@ In the root level, we only have:
 npm install eslint --save-dev
 npm init @eslint/config
 ```
+
+You can call the lint explicitly from command line. Add `--ext` for any suffix you want to lint, and then path to folder / file to test.
+```
+npx eslint --ext .js src/
+```
