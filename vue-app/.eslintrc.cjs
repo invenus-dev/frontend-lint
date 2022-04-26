@@ -10,5 +10,8 @@ module.exports = {
   ],
   env: {
     'vue/setup-compiler-macros': true,
+    node: true,
   },
+  parser: 'vue-eslint-parser',
+  plugins: ['prettier'],
 };
