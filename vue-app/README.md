@@ -1,4 +1,4 @@
-## Linting Vue app
+## Linting Vue App
 
 ### Deviations from global Readme
 
@@ -6,4 +6,4 @@
   - offers ESLint (ticked yes)
   - offers Prettier (ticked yes)
 - I added a `.prettierrc` file
-- there is recommended tooling for vscode - `johnsoncodehk.volar` + `johnsoncodehk.vscode-typescript-vue-plugin`. Disable the second one if you don't use TS.
+- there is recommended tooling for vscode - `johnsoncodehk.volar` + `johnsoncodehk.vscode-typescript-vue-plugin`. Unfortunately both have issues not resolvable without Typescript config - see https://github.com/johnsoncodehk/volar/discussions/592
