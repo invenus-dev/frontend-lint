@@ -11,3 +11,14 @@
 ### Stylelint, ESlint
 
 - follow readme of vue-app regarding stylelint
+
+### Actions
+
+- there are actions defined in `package.json` that you can use for standalone checks:
+
+```json
+  "scripts": {    
+    "typecheck": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore  && stylelint **/*.vue"
+  },
+```
