@@ -15,7 +15,7 @@ These settings worked well for VSCode:
 
 1. Install those
 
-```bash
+```console
 $ npm install --save-dev stylelint stylelint-config-recommended-vue stylelint-config-prettier postcss-html
 ```
 
