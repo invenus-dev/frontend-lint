@@ -58,13 +58,15 @@ $ npm init @eslint/config
 $ npm install --save-dev eslint-config-prettier
 ```
 
-and add `prettier` as entry into `eslintrc.js`
+and add `prettier` as entry into `eslintrc.cjs`
 
 - CLI usage: you can call the lint explicitly from command line. Add `--ext` for any suffix you want to lint, and then path to folder / file to test.
 
 ```console
 $ npx eslint src/ --ext .js,.jsx
 ```
+
+- To limit ESLint trying to parse parent folders for configuration, use `root: true` in the top-most config.
 
 ### Stylelint
 
