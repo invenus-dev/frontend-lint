@@ -1,7 +1,7 @@
 <script>
   export let name;
   let count = 0;
-  $: doubled = count + 2;  
+  $: doubled = count + 2;
 </script>
 
 <main>
@@ -22,7 +22,7 @@
     text-align: center;
     padding: 1em;
     max-width: 240px;
-    margin: 0 auto;
+    margin: 0 auto 0.7;    
   }
 
   h1 {

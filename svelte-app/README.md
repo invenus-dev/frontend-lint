@@ -1,6 +1,6 @@
 ## Linting Svelte App
 
-Initialized svelte via:
+Initialized Svelte via:
 
 ```console
 $ npx degit sveltejs/template svelte-app
@@ -17,3 +17,8 @@ Basically can reuse any existing config from previous projects, and add [eslint-
 
 For VSCode, add `"svelte"` into filetypes which ESLint validates (`"eslint.validate"` entry in workspace JSON).
 
+**Stylelint**
+
+[Follwing this tutorial](https://rodneylab.com/stylelint-sveltekit/) should give a hint.
+
+I just used same settings as for Vue: `stylelint-config-prettier` and `postcss-html` for setting syntax.
