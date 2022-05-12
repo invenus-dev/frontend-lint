@@ -10,6 +10,12 @@ $ npm install
 $ npm run dev
 ```
 
+**Extra npm modules**
+
+```console
+$ npm install -D eslint eslint-config-prettier eslint-plugin-svelte3 postcss postcss-html prettier stylelint stylelint-config-prettier stylelint-config-recommended @typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
+
 ### Deviations from global Readme
 
 See `svelte-app` readme for basic notes, same base configs used.

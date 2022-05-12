@@ -9,7 +9,15 @@ $ npm install
 $ npm run dev
 ```
 
+**Extra npm modules**
+
+```console
+$ npm install -D eslint eslint-config-prettier eslint-plugin-svelte3 postcss postcss-html prettier stylelint stylelint-config-prettier stylelint-config-recommended
+```
+
 ### Deviations from global Readme
+
+
 
 **ESLint**
 
@@ -26,3 +34,4 @@ I just used same settings as for Vue: `stylelint-config-prettier` and `postcss-h
 **Visual Studio Code**
 
 For VSCode, recommended to install `svelte.svelte-vscode` extension.
+
