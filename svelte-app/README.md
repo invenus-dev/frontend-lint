@@ -12,7 +12,7 @@ $ npm run dev
 **Extra npm modules**
 
 ```console
-$ npm install -D eslint eslint-config-prettier eslint-plugin-svelte3 postcss postcss-html prettier stylelint stylelint-config-prettier stylelint-config-recommended
+$ npm install -D eslint-plugin-svelte3 postcss postcss-html stylelint-config-recommended
 ```
 
 ### Deviations from global Readme
