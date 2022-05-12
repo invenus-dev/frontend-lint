@@ -1,7 +1,5 @@
-<script>
-  export let name;
-  let count = 0;
-  $: doubled = count + 2;
+<script lang="ts">
+  export let name: number;
 </script>
 
 <main>
@@ -10,11 +8,6 @@
     Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
     how to build Svelte apps.
   </p>
-  <button>
-    clicked {count}
-    {count === 1 ? 'time' : 'times'}
-  </button>
-  <p>{count} doubled is {doubled}</p>
 </main>
 
 <style>
@@ -22,8 +15,7 @@
     text-align: center;
     padding: 1em;
     max-width: 240px;
-    margin: 0 auto 0.7;
-    font-size: 2em;
+    margin: 0 auto;
   }
 
   h1 {

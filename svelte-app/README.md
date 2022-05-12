@@ -19,8 +19,10 @@ For VSCode, add `"svelte"` into filetypes which ESLint validates (`"eslint.valid
 
 **Stylelint**
 
-[Follwing this tutorial](https://rodneylab.com/stylelint-sveltekit/) should give a hint.
+[Following this tutorial](https://rodneylab.com/stylelint-sveltekit/) should give a hint.
 
 I just used same settings as for Vue: `stylelint-config-prettier` and `postcss-html` for setting syntax.
 
-@TODO stylelint in VSCode not working
+**Visual Studio Code**
+
+For VSCode, recommended to install `svelte.svelte-vscode` extension.
